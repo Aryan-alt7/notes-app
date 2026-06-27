@@ -1,0 +1,83 @@
+.notes-container {
+    width: 90%;
+    margin: 40px auto;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    gap: 20px;
+}
+
+.note-card {
+    background: white;
+    padding: 20px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+    transition: 0.3s;
+}
+
+.note-card:hover {
+    transform: translateY(-5px);
+}
+
+.note-card h2 {
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.note-card p {
+    color: #555;
+    line-height: 1.5;
+}
+
+.note-actions {
+    margin-top: 15px;
+
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.note-actions button {
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+.note-card input,
+.note-card textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.note-card textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.note-card input:focus,
+.note-card textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+.note-card .save {
+    background: #2563eb;
+    color: white;
+
+    border: none;
+    padding: 8px 16px;
+
+    border-radius: 6px;
+    cursor: pointer;
+}

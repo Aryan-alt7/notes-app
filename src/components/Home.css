@@ -1,0 +1,78 @@
+.note-container {
+    width: 60%;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px hsla(0, 0%, 0%, 0.15)
+}
+
+.note-title,
+.note-content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.note-title h2,
+.note-content h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: hsl(0, 0%, 20%);
+}
+
+.note-title input,
+.note-content input {
+    padding: 12px;
+    border: 1px solid hsl(0, 0%, 80%);
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.note-title input:focus,
+.note-content input:focus {
+    border-color: #2563eb;
+}
+
+.note-content input {
+    height: 120px;
+}
+.note-content textarea {
+    min-height: 150px;
+    padding: 12px;
+    border: 1px solid hsl(0, 0%, 80%);
+    border-radius: 8px;
+    font-size: 16px;
+    resize: vertical;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.note-content textarea:focus {
+    border-color: hsl(221, 83%, 53%);
+}
+.save-btn {
+    background-color: hsl(221, 83%, 53%);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.save-btn {
+    display: block;
+    margin-left: auto;
+    margin-top: 20px;
+}
+
+.save-btn:hover {
+    background-color: hsl(224, 76%, 48%);
+}
+
+.save-btn:active {
+    transform: scale(0.98);
+}
