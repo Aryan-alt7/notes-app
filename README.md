@@ -1,16 +1,41 @@
-# React + Vite
+live at : https://notes-app-iota-seven.vercel.app/
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Notes App
 
-Currently, two official plugins are available:
+A lightweight note-taking application built with React for capturing algorithmic insights, problem-solving patterns, debugging experiences, and competitive programming learnings.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- Create, edit and delete notes
+- Persistent browser storage with Local Storage
+- Fast and lightweight interface
+- No backend required
+- Offline support
+- Ideal for maintaining a personal algorithm journal
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+- React
+- JavaScript
+- CSS
+- Local Storage
+- Vercel
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Motivation
+
+Instead of bookmarking editorials or saving screenshots, this app serves as a personal repository of insights gained while solving DSA and competitive programming problems.
+
+Examples of notes:
+
+3020 - Maximum Number of Elements in Subset
+
+Observation:
+- Symmetric sequence
+- Peak appears once
+- Others appear twice
+
+Pattern:
+Need multiplicities → Frequency Map
+
+Lesson:
+If a problem requires k copies of values, think HashMap<value, frequency>.
