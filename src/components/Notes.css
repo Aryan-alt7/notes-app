@@ -18,6 +18,10 @@
 
     transition: 0.3s;
 }
+.note-card p {
+    white-space: pre-wrap;
+    line-height: 1.5;
+}
 
 .note-card:hover {
     transform: translateY(-5px);
