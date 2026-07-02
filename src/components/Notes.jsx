@@ -11,6 +11,8 @@ export function Notes({ notes, setNotes }) {
         body: "",
     })
 
+    const [expandedId, setExpandedId] = useState(null);
+
     const editNote = (id) => {
         const note = notes.find((n) => n.id === id);
         setEditId(id);
@@ -66,11 +68,25 @@ export function Notes({ notes, setNotes }) {
                     ) : (
                         <>
                             <h2>{note.title}</h2>
-                            <p>
+                            <p className={expandedId === note.id ? "expanded" : "collapsed"}>
                                 {note.body}
                             </p>
 
+
                             <div className="note-actions">
+                                {note.body.length > 150 && (
+                                    <button
+                                        onClick={() =>
+                                            setExpandedId(
+                                                expandedId === note.id ? null : note.id
+                                            )
+                                        }
+                                    >
+                                        {expandedId === note.id
+                                            ? "Show Less"
+                                            : "Read More"}
+                                    </button>
+                                )}
                                 <button onClick={() => editNote(note.id)}>Edit</button>
                                 <button onClick={() => deleteNote(note.id)} >Delete</button>
                             </div>
