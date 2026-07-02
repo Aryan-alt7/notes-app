@@ -19,8 +19,20 @@
     transition: 0.3s;
 }
 .note-card p {
-    white-space: pre-wrap;
+    color: #555;
     line-height: 1.5;
+    white-space: pre-wrap;
+}
+
+.collapsed {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.expanded {
+    white-space: pre-wrap;
 }
 
 .note-card:hover {
